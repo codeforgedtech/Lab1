@@ -4,6 +4,7 @@ import Form from './components/Form';
 import Display from './components/Display';
 import Counter from './components/Counter';
 import Footer from './components/Footer';
+import FocusInput from './components/FocusInput';
 
 const App: React.FC = () => {
     const [message, setMessage] = useState<string>('');
@@ -22,6 +23,7 @@ const App: React.FC = () => {
             <Form onSubmit={handleFormSubmit} />
             <Display message={message} />
             <Counter />
+            <FocusInput />
             <Footer />
         </div>
     );
